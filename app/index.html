@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<head>
+	<title>
+		my first Mongo DB 
+	</title>
+</head>
+<script type="text/javascript" src="angular/angular.min.js"></script>
+<script type="text/javascript" src="js/module_and_controller.js"></script>
+<body>
+<div ng-controller="myCtr">
+
+    <div ng-repeat="step in stepsModel">
+        <img  ng-src="{{step}}" height="200" width="200" />
+    </div>
+    
+    <input type='file' ng-model-instant onchange="angular.element(this).scope().imageUpload(event)" multiple />
+
+</div>
+
+
+
+</body>
+</html>
